@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>Control work 18 JS</title>
+  </head>
+  <body>
+    <div id="first-container">
+      <div class="header-container">
+        <div class="menu-section">
+    
+          <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <button id="editTextareaAction" disabled type="button" class="btn btn-light"><img src="./img/premium-icon-html-format-3489634.png" width="40px" height="40px"></button>
+          </div>
+    
+          <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <button type="button" class="btn btn-light">
+              <svg id="font-weight-bold" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" data-name="Layer 1" viewBox="0 0 24 24">
+                <path fill="#black" d="M16.5,9.5A3.5,3.5,0,0,0,13,6H8.5a1,1,0,0,0-1,1V17a1,1,0,0,0,1,1H13a3.49,3.49,0,0,0,2.44-6A3.5,3.5,0,0,0,16.5,9.5ZM13,16H9.5V13H13a1.5,1.5,0,0,1,0,3Zm0-5H9.5V8H13a1.5,1.5,0,0,1,0,3Z" />
+              </svg>
+            </button>
+            <button type="button" class="btn btn-light">
+              <svg id="font-style-italick" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" data-name="Layer 1" viewBox="0 0 24 24">
+                <path fill="#black" d="M17,6H11a1,1,0,0,0,0,2h1.52l-3.2,8H7a1,1,0,0,0,0,2h6a1,1,0,0,0,0-2H11.48l3.2-8H17a1,1,0,0,0,0-2Z" />
+              </svg>
+            </button>
+            <button type="button" class="btn btn-light">
+              <svg id="text-decor-underline" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" data-name="Layer 1" viewBox="0 0 24 24">
+                <path fill="#black" d="M12,15.5a5,5,0,0,0,5-5v-5a1,1,0,0,0-2,0v5a3,3,0,0,1-6,0v-5a1,1,0,0,0-2,0v5A5,5,0,0,0,12,15.5Zm5,2H7a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2Z" />
+              </svg>
+            </button>
+            <button type="button" class="btn btn-light">
+              <svg id="text-decor-strike" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" data-name="Layer 1" viewBox="0 0 24 24">
+                <path fill="#black" d="M15,13H9a1,1,0,0,0,0,2h2v2a1,1,0,0,0,2,0V15h2a1,1,0,0,0,0-2Zm2-7H7A1,1,0,0,0,7,8h4v2a1,1,0,0,0,2,0V8h4a1,1,0,0,0,0-2Z" />
+              </svg>
+            </button>
+          </div>
+    
+          <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <button type="button" class="btn btn-light">
+              <svg id="text-align-left" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24">
+                <path fill="#black" d="M3,7H21a1,1,0,0,0,0-2H3A1,1,0,0,0,3,7Zm0,4H17a1,1,0,0,0,0-2H3a1,1,0,0,0,0,2Zm18,2H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm-4,4H3a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2Z" />
+              </svg>
+            </button>
+            <button type="button" class="btn btn-light">
+              <svg id="text-align-center" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24">
+                <path fill="#black" d="M3,7H21a1,1,0,0,0,0-2H3A1,1,0,0,0,3,7ZM7,9a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2Zm14,4H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm-4,4H7a1,1,0,0,0,0,2H17a1,1,0,0,0,0-2Z" />
+              </svg>
+            </button>
+            <button type="button" class="btn btn-light">
+              <svg id="text-align-right" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24">
+                <path fill="#black" d="M3,7H21a1,1,0,0,0,0-2H3A1,1,0,0,0,3,7ZM21,17H7a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm0-8H7a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Zm0,4H3a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z" />
+              </svg>
+            </button>
+          </div>
+    
+          <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+            <div class="btn-group" role="group">
+              <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <svg id="btn-font-family" xmlns="http://www.w3.org/2000/svg" width="25px" height="40px" data-name="Layer 1" viewBox="0 0 24 24">
+                  <path fill="#black" d="M21,20H20V3a1,1,0,0,0-1-1H15.5a1,1,0,0,0-.86.5L4.43,20H3a1,1,0,0,0,0,2H7a1,1,0,0,0,0-2H6.74l3.5-6H18v6H17a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Zm-3-8H11.41l4.66-8H18Z" />
+                </svg>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <li class="font" style="font-family:Arial;"><a class="dropdown-item" href="#">Arial</a></li>
+                <li class="font" style="font-family:Georgia;"><a class="dropdown-item" href="#">Georgia</a></li>
+                <li class="font" style="font-family:Impact;"><a class="dropdown-item" href="#">Impact</a></li>
+                <li class="font" style="font-family:Tahoma;"><a class="dropdown-item" href="#">Tahoma</a></li>
+                <li class="font" style="font-family:Times New Roman;"><a class="dropdown-item" href="#">Times New Roman</a></li>
+                <li class="font" style="font-family:Verdana;"><a class="dropdown-item" href="#">Verdana</a></li>
+              </ul>
+            </div>
+    
+            <div class="btn-group" role="group">
+              <button id="btnGroupDrop1" type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                <svg id="btn-font-size" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" data-name="Layer 1" viewBox="0 0 24 24">
+                  <path fill="#black" d="M9,11H3a1,1,0,0,0,0,2H5v5a1,1,0,0,0,2,0V13H9a1,1,0,0,0,0-2ZM21,5H9A1,1,0,0,0,9,7h5V18a1,1,0,0,0,2,0V7h5a1,1,0,0,0,0-2Z" />
+                </svg>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <li style="font-size:12px;"><a class="dropdown-item" href="#">12px</a></li>
+                <li style="font-size:14px;"><a class="dropdown-item" href="#">14px</a></li>
+                <li style="font-size:16px;"><a class="dropdown-item" href="#">16px</a></li>
+                <li style="font-size:18px;"><a class="dropdown-item" href="#">18px</a></li>
+                <li style="font-size:20px;"><a class="dropdown-item" href="#">20px</a></li>
+                <li style="font-size:22px;"><a class="dropdown-item" href="#">22px</a></li>
+                <li style="font-size:25px;"><a class="dropdown-item" href="#">25px</a></li>
+                <li style="font-size:30px;"><a class="dropdown-item" href="#">30px</a></li>
+              </ul>
+            </div>
+    
+            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <svg id="btn-change-color-text" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" data-name="Layer 1" viewBox="0 0 24 24">
+                <path fill="#black" d="M7.42,15.54a1,1,0,0,0,0,1.41,1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.41A1,1,0,0,0,7.42,15.54Zm0-8.49a1,1,0,0,0,0,1.41,1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.41A1,1,0,0,0,7.42,7.05Zm4.95,10a1,1,0,1,0,1,1A1,1,0,0,0,12.37,17Zm-6-6a1,1,0,1,0,1,1A1,1,0,0,0,6.37,11Zm6-6a1,1,0,1,0,1,1A1,1,0,0,0,12.37,5Zm3.54,2.05a1,1,0,1,0,1.41,0A1,1,0,0,0,15.91,7.05Zm6.3,0a11,11,0,1,0-7.85,15.74,3.87,3.87,0,0,0,2.5-1.65A4.2,4.2,0,0,0,17.47,18a5.65,5.65,0,0,1-.1-1,5,5,0,0,1,3-4.56,3.84,3.84,0,0,0,2.06-2.25A4,4,0,0,0,22.21,7.08Zm-1.7,2.44a1.9,1.9,0,0,1-1,1.09A7,7,0,0,0,15.37,17a7.3,7.3,0,0,0,.14,1.4,2.16,2.16,0,0,1-.31,1.65,1.79,1.79,0,0,1-1.21.8,8.72,8.72,0,0,1-1.62.15,9,9,0,0,1-9-9.28A9.05,9.05,0,0,1,11.85,3h.51a9,9,0,0,1,8.06,5A2,2,0,0,1,20.51,9.52ZM12.37,11a1,1,0,1,0,1,1A1,1,0,0,0,12.37,11Z" />
+              </svg>
+            </button>
+            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modal-change-background">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24">
+                <path fill="#black" d="M19,2H5A3,3,0,0,0,2,5V19a3,3,0,0,0,3,3H19a2.81,2.81,0,0,0,.49-.05l.3-.07.07,0h0l.05,0,.37-.14.13-.07c.1-.06.21-.11.31-.18a3.79,3.79,0,0,0,.38-.32l.07-.09a2.69,2.69,0,0,0,.27-.32l.09-.13a2.31,2.31,0,0,0,.18-.35,1,1,0,0,0,.07-.15c.05-.12.08-.25.12-.38l0-.15A2.6,2.6,0,0,0,22,19V5A3,3,0,0,0,19,2ZM5,20a1,1,0,0,1-1-1V14.69l3.29-3.3h0a1,1,0,0,1,1.42,0L17.31,20Zm15-1a1,1,0,0,1-.07.36,1,1,0,0,1-.08.14.94.94,0,0,1-.09.12l-5.35-5.35.88-.88a1,1,0,0,1,1.42,0h0L20,16.69Zm0-5.14L18.12,12a3.08,3.08,0,0,0-4.24,0l-.88.88L10.12,10a3.08,3.08,0,0,0-4.24,0L4,11.86V5A1,1,0,0,1,5,4H19a1,1,0,0,1,1,1ZM13.5,6A1.5,1.5,0,1,0,15,7.5,1.5,1.5,0,0,0,13.5,6Z" />
+              </svg>
+            </button>
+    
+          </div>
+    
+          <!-- not LOGGED IN -->
+          <div class="btn-group" role="group" aria-label="Button group with nested dropdown" data-bs-toggle="modal" data-bs-target="#examplesModal">
+            <button type="button" class="btn btn-light">
+              <svg id="lockIcon" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24">
+                <path fill="#black" d="M17,9V7A5,5,0,0,0,7,7V9a3,3,0,0,0-3,3v7a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V12A3,3,0,0,0,17,9ZM9,7a3,3,0,0,1,6,0V9H9Zm9,12a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V12a1,1,0,0,1,1-1H17a1,1,0,0,1,1,1Z" />
+              </svg>
+            </button>
+          </div>
+    
+          <!-- Logged IN -->
+          <div class="btn-group" role="group" aria-label="Button group with nested dropdown" data-bs-toggle="modal" data-bs-target="#signoutModal">
+            <button type="button" class="btn btn-light">
+              <svg id="unlockIcon" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24">
+                <path fill="#black" d="M17,9H9V7a3,3,0,0,1,5.12-2.13,3.08,3.08,0,0,1,.78,1.38,1,1,0,1,0,1.94-.5,5.09,5.09,0,0,0-1.31-2.29A5,5,0,0,0,7,7V9a3,3,0,0,0-3,3v7a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V12A3,3,0,0,0,17,9Zm1,10a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V12a1,1,0,0,1,1-1H17a1,1,0,0,1,1,1Z" />
+              </svg>
+            </button>
+          </div>
+    
+        </div>
+      </div>
+      <div class="screen-container">
+        <p>Lorem ipsum dolor sit amet НЕСТОРКО adipisicing elit. Et eum aperiam quaerat itaque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eum aperiam quaerat itaque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eum aperiam quaerat itaque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eum aperiam quaerat itaque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eum aperiam quaerat itaque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eum aperiam quaerat itaque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eum aperiam quaerat itaque!</p>
+    
+      </div>
+    </div>
+    
+    <!-- SECOND CONTAINER -->
+    <div id="second-container">
+      <div class="header-container">
+        <div class="menu-section">
+          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group me-2" role="group" aria-label="First group">
+              <button type="button" class="btn btn-light">
+                <svg id="saveBtn" xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" data-name="Layer 1" viewBox="0 0 24 24">
+                  <path fill="#black" d="M20.71,9.29l-6-6a1,1,0,0,0-.32-.21A1.09,1.09,0,0,0,14,3H6A3,3,0,0,0,3,6V18a3,3,0,0,0,3,3H18a3,3,0,0,0,3-3V10A1,1,0,0,0,20.71,9.29ZM9,5h4V7H9Zm6,14H9V16a1,1,0,0,1,1-1h4a1,1,0,0,1,1,1Zm4-1a1,1,0,0,1-1,1H17V16a3,3,0,0,0-3-3H10a3,3,0,0,0-3,3v3H6a1,1,0,0,1-1-1V6A1,1,0,0,1,6,5H7V8A1,1,0,0,0,8,9h6a1,1,0,0,0,1-1V6.41l4,4Z" />>
+                </svg>
+              </button>
+              <!-- !!!!!  + MODAL TABLE -->
+    
+              <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#examplesTabModal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24">
+                  <path fill="#black" d="M21,2H3A1,1,0,0,0,2,3V21a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V3A1,1,0,0,0,21,2ZM8,20H4V16H8Zm0-6H4V10H8ZM8,8H4V4H8Zm6,12H10V16h4Zm0-6H10V10h4Zm0-6H10V4h4Zm6,12H16V16h4Zm0-6H16V10h4Zm0-6H16V4h4Z" />
+                </svg>
+              </button>
+    
+              <!-- !!!!!  + MODAL CREATE OL -->
+              <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#examplesTabOlModal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" enable-background="new 0 0 24 24" viewBox="0 0 24 24">
+                  <path fill="#black" d="M7,20H4v-0.1C4,19.4,4.4,19,4.9,19c1.4,0,2.6-0.9,3-2.2c0.4-1.6-0.5-3.3-2.1-3.7c-1.3-0.4-2.7,0.2-3.4,1.4c-0.3,0.5-0.1,1.1,0.4,1.4c0.5,0.3,1.1,0.1,1.4-0.4c0,0,0,0,0,0c0.3-0.5,0.9-0.6,1.4-0.3c0.1,0.1,0.2,0.1,0.2,0.2C6,15.7,6,16,6,16.3c-0.2,0.4-0.6,0.7-1,0.7C3.3,17,2,18.3,2,19.9V21c0,0.6,0.4,1,1,1h4c0.6,0,1-0.4,1-1S7.6,20,7,20z M7,9H6V3c0-0.6-0.4-1-1-1S4,2.4,4,3v1H3C2.4,4,2,4.4,2,5s0.4,1,1,1h1v3H3c-0.6,0-1,0.4-1,1s0.4,1,1,1h4c0.6,0,1-0.4,1-1S7.6,9,7,9z M11,6h10c0.6,0,1-0.4,1-1s-0.4-1-1-1H11c-0.6,0-1,0.4-1,1S10.4,6,11,6z M21,20H11c-0.6,0-1,0.4-1,1s0.4,1,1,1h10c0.6,0,1-0.4,1-1S21.6,20,21,20z M21,9H11c-0.6,0-1,0.4-1,1s0.4,1,1,1h10c0.6,0,1-0.4,1-1S21.6,9,21,9z M21,15H11c-0.6,0-1,0.4-1,1s0.4,1,1,1h10c0.6,0,1-0.4,1-1S21.6,15,21,15z" />
+                </svg>
+              </button>
+    
+              <!-- !!!!!  + MODAL CREATE LI-->
+              <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#examplesTabLiModal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24">
+                  <path fill="#black" d="M3.71,16.29a1,1,0,0,0-.33-.21,1,1,0,0,0-.76,0,1,1,0,0,0-.33.21,1,1,0,0,0-.21.33,1,1,0,0,0,.21,1.09,1.15,1.15,0,0,0,.33.21.94.94,0,0,0,.76,0,1.15,1.15,0,0,0,.33-.21,1,1,0,0,0,.21-1.09A1,1,0,0,0,3.71,16.29ZM7,8H21a1,1,0,0,0,0-2H7A1,1,0,0,0,7,8ZM3.71,11.29a1,1,0,0,0-1.09-.21,1.15,1.15,0,0,0-.33.21,1,1,0,0,0-.21.33.94.94,0,0,0,0,.76,1.15,1.15,0,0,0,.21.33,1.15,1.15,0,0,0,.33.21.94.94,0,0,0,.76,0,1.15,1.15,0,0,0,.33-.21,1.15,1.15,0,0,0,.21-.33.94.94,0,0,0,0-.76A1,1,0,0,0,3.71,11.29ZM21,11H7a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2ZM3.71,6.29a1,1,0,0,0-.33-.21,1,1,0,0,0-1.09.21,1.15,1.15,0,0,0-.21.33.94.94,0,0,0,0,.76,1.15,1.15,0,0,0,.21.33,1.15,1.15,0,0,0,.33.21,1,1,0,0,0,1.09-.21,1.15,1.15,0,0,0,.21-.33.94.94,0,0,0,0-.76A1.15,1.15,0,0,0,3.71,6.29ZM21,16H7a1,1,0,0,0,0,2H21a1,1,0,0,0,0-2Z" />
+                </svg>
+              </button>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+      <div>
+        <textarea id="copy-text"></textarea>
+      </div>
+    
+    </div>
+    
+    <!-- MODAL BTN LOCK & UNLOCK -->
+    
+    <div class="modal" tabindex="-1" id="signoutModal">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+    
+          <div id="tableId" class="modal-body" style="display:flex;justify-content: space-evenly;">
+    
+            <div class="btn-group mr-2" role="group">
+              <button type="button" data-bs-dismiss="modal" class="btn btn-dark btn-block">Cancel</button>
+            </div>
+    
+            <div class="btn-group" role="group">
+              <button id="signoutAction" type="button" class="btn btn-danger btn-block">Sign out</button>
+            </div>
+    
+          </div>
+    
+        </div>
+    
+      </div>
+    </div>
+    
+    <!-- MODAL TABLE   -->
+    <div class="modal" tabindex="-1" id="examplesTabModal">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Create table</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div id="tableId" class="modal-body">
+    
+            <form name="table_settings" onsubmit="event.preventDefault();">
+    
+              <div class="style-table-containers">
+    
+                <div class="left-section-style-table">
+    
+                  <p>Count TR</p>
+                  <input class="tr" type="text" name="tr_count" placeholder="Type here.." pattern="^\d+">
+                  <p>Width of TD</p>
+                  <input class="tr" type="text" name="td_width" type="text" placeholder="Type here..">
+                  <p>Width of border</p>
+                  <input class="ws" type="text" name="table_border_width" placeholder="Type here..">
+    
+                  <span class="error-emptyInputs">Value is empty</span>
+    
+                </div>
+    
+                <div class="right-section-style-table">
+    
+                  <p>Count TD</p>
+                  <input class="td" type="text" name="td_count" placeholder="Type here..">
+                  <p>Height of TD</p>
+                  <input class="td" type="text" name="td_height" placeholder="Type here..">
+    
+                  <div class="style-opsions-table">
+                    <div id="style-table-border">
+                      <p class="par">Style of border:</p>
+                      <select class="type_border" name="border_type">
+                        <option value="" disabled selected>choose style</option>
+                        <option value="dotted">dotted</option>
+                        <option value="dotted">dashed</option>
+                        <option value="solid">solid</option>
+                        <option value="double">double</option>
+                        <option value="dotted">groove</option>
+                        <option value="ridge">ridge</option>
+                        <option value="ridge">inset</option>
+                        <option value="ridge">outset</option>
+                      </select>
+                    </div>
+    
+                    <div id="color-style-table-border">
+                      <p class="par">Color of border:</p>
+                      <select class="color_border" name="border_color">
+                        <option value="" disabled selected>choose color</option>
+                        <option value="red">black</option>
+                        <option value="red">red</option>
+                        <option value="green">green</option>
+                        <option value="blue">blue</option>
+                        <option value="yellow">yellow</option>
+                        <option value="blue">white</option>
+                        <option value="blue">gray</option>
+                        <option value="pink">pink</option>
+                      </select>
+                    </div>
+    
+                  </div>
+    
+                </div>
+    
+              </div>
+    
+            </form>
+    
+            <div style="margin:10px 20px;">
+              <span class="error-invalidTable">invalid value</span>
+            </div>
+    
+            <div id="tableBtns">
+              <button id="resetTableBtn" type="button" class="btn btn-danger">Reset</button>
+              <button id="createTableBtn" type="button" class="btn btn-success">Create table</button>
+            </div>
+    
+          </div>
+    
+        </div>
+    
+      </div>
+    </div>
+    
+    <!-- !!!!!  + MODAL CREATE OL -->
+    <div class="modal" tabindex="-1" id="examplesTabOlModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Create Ol</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+    
+            <div class="ol-list-style-block">
+              <form name="list_settings_ol" onsubmit="event.preventDefault();">
+    
+                <p class="par_li">Count li item:</p>
+                <input class="input_li" type="text" name="li" placeholder="Type here..">
+    
+                <p class="mar_li">Type mark of list:</p>
+                <select class="type_marks_li" name="type">
+                  <option value="" disabled selected>choose Ol type mark</option>
+                  <option value="i">i</option>
+                  <option value="I">I</option>
+                  <option value="A">A</option>
+                  <option value="a">a</option>
+                  <option value="1">1</option>
+                </select>
+    
+              </form>
+    
+              <div style="margin:20px 20px;">
+                <span class="error-invalidTable">invalid value</span>
+              </div>
+    
+            </div>
+    
+          </div>
+          <div class="modal-footer">
+            <div class="style-btn-for-list">
+              <div>
+                <button class="ol-reset-btn">Reset</button>
+              </div>
+              <div>
+                <button class="ol-create-btn">Create list</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- !!!!!  + MODAL CREATE LI  165-->
+    
+    <div class="modal" tabindex="-1" id="examplesTabLiModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Create Ul</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="list_style_block">
+    
+              <form name="list_settings" onsubmit="event.preventDefault();">
+    
+                <p class="par_li">Count li item:</p>
+                <input class="input_li" type="text" name="li" placeholder="Type here..">
+    
+                <p class="mar_li">Type mark of list:</p>
+                <select class="type_marks_li" name="type">
+                  <option value="" disabled selected>choose Ul type mark</option>
+                  <option value="circle">circle</option>
+                  <option value="disk">disk</option>
+                  <option value="square">square</option>
+                </select>
+    
+              </form>
+    
+              <div style="margin:20px 20px;">
+                <span class="error-invalidTable">invalid value</span>
+              </div>
+    
+            </div>
+    
+          </div>
+          <div class="modal-footer">
+    
+            <div class="style-btn-for-list">
+              <div>
+                <button class="list-reset-btn">Reset</button>
+              </div>
+              <div>
+                <button class="list-create-btn">Create list</button>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Chooce text color</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <div class="color-square green"></div>
+              <div class="color-square lightgreen"></div>
+              <div class="color-square greenyellow"></div>
+            </div>
+            <div>
+              <div class="color-square darkolivegreen"></div>
+              <div class="color-square darkseagreen"></div>
+              <div class="color-square yellow"></div>
+            </div>
+            <div>
+              <div class="color-square lightyellow"></div>
+              <div class="color-square goldenrod"></div>
+              <div class="color-square chocolate"></div>
+            </div>
+            <div>
+              <div class="color-square orangered"></div>
+              <div class="color-square darksalmon"></div>
+              <div class="color-square deeppink"></div>
+            </div>
+            <div>
+              <div class="color-square crimson"></div>
+              <div class="color-square fuchsia"></div>
+              <div class="color-square darkviolet"></div>
+            </div>
+            <div>
+              <div class="color-square cadetblue"></div>
+              <div class="color-square dodgerblue"></div>
+              <div class="color-square lightblue"></div>
+            </div>
+            <div>
+              <div class="color-square blue"></div>
+              <div class="color-square gray"></div>
+              <div class="color-square black"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal  2 -->
+    <div class="modal fade" id="modal-change-background" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Chooce background color or image</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body table-settings">
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Colors</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Images</button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Files</button>
+              </div>
+              <br>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                <div class="color-square-background">
+                  <div>
+                    <div class="background-square green"></div>
+                    <div class="background-square lightgreen"></div>
+                    <div class="background-square greenyellow"></div>
+                  </div>
+                  <div>
+                    <div class="background-square darkolivegreen"></div>
+                    <div class="background-square darkseagreen"></div>
+                    <div class="background-square yellow"></div>
+                  </div>
+                  <div>
+                    <div class="background-square lightyellow"></div>
+                    <div class="background-square goldenrod"></div>
+                    <div class="background-square chocolate"></div>
+                  </div>
+                  <div>
+                    <div class="background-square orangered"></div>
+                    <div class="background-square darksalmon"></div>
+                    <div class="background-square deeppink"></div>
+                  </div>
+                  <div>
+                    <div class="background-square crimson"></div>
+                    <div class="background-square fuchsia"></div>
+                    <div class="background-square darkviolet"></div>
+                  </div>
+                  <div>
+                    <div class="background-square cadetblue"></div>
+                    <div class="background-square dodgerblue"></div>
+                    <div class="background-square lightblue"></div>
+                  </div>
+                  <div>
+                    <div class="background-square blue"></div>
+                    <div class="background-square gray"></div>
+                    <div class="background-square black"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                <div id="styleImageSquare">
+                  <div>
+                    <img class="img1 imgStyle" width="1920" height="1000" src="./img/1.jpg" alt="image">
+                    <img class="img2 imgStyle" width="1920" height="1000" src="./img/2.jpg" alt="image">
+                    <img class="img3 imgStyle" width="1920" height="1000" src="./img/3.jpg" alt="image">
+                  </div>
+                  <div>
+                    <img class="img4 imgStyle" width="1920" height="1000" src="./img/4.jpg" alt="image">
+                    <img class="img5 imgStyle" width="1920" height="1000" src="./img/5.jpg" alt="image">
+                    <img class="img6 imgStyle" width="1920" height="1000" src="./img/6.jpg" alt="image">
+                  </div>
+                  <div>
+                    <img class="img7 imgStyle" width="1920" height="1000" src="./img/7.jpg" alt="image">
+                    <img class="img8 imgStyle" width="1920" height="1000" src="./img/8.jpg" alt="image">
+                    <img class="img9 imgStyle" width="1920" height="1000" src="./img/9.jpg" alt="image">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+    
+                <div class="input-group mb-3">
+                  <input class="form-control form-control-sm imageInput" id="formFileSm" type="file">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- MODAL SING UP -->
+    
+    <div class="modal" tabindex="-1" id="examplesModal" aria-labelledby="examplesModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title input-title">Sign In</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <div style="padding:0 37px;">
+              <form id="signinForm" style="display:block;">
+                <input class="input-login" type="text" placeholder="Login here...">
+                <input class="input-pass" type="password" placeholder="Password here...">
+                <span class="error-emptyInputs">Value is empty</span>
+                <br>
+                <span class="error-messageInputs">Please check your login or password</span>
+                <button id="signinAction" type="button" class="btn btn-secondary">Sign in</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+
+  </body>
+</html>
+

@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.header-container {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 150px;
+  background-color: dimgrey;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+#copy-text {
+  width: 100%;
+  height: 600px;
+  padding: 30px;
+}
+
+#btn-textarea {
+  background-color: lightgray;
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.screen-container {
+  padding-left: 30px;
+  padding-top: 50px;
+  font-weight: normal;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+}
+
+.color-square {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.background-square {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.green {
+  background-color: green;
+}
+
+.lightgreen {
+  background-color: lightgreen;
+}
+
+.greenyellow {
+  background-color: greenyellow;
+}
+
+.darkolivegreen {
+  background-color: darkolivegreen;
+}
+
+.darkseagreen {
+  background-color: darkseagreen;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.lightyellow {
+  background-color: lightyellow;
+}
+
+.goldenrod {
+  background-color: goldenrod;
+}
+
+.chocolate {
+  background-color: chocolate;
+}
+
+.orangered {
+  background-color: orangered;
+}
+
+.darksalmon {
+  background-color: darksalmon;
+}
+
+.deeppink {
+  background-color: deeppink;
+}
+
+.crimson {
+  background-color: crimson;
+}
+
+.fuchsia {
+  background-color: fuchsia;
+}
+
+.darkviolet {
+  background-color: darkviolet;
+}
+
+.cadetblue {
+  background-color: cadetblue;
+}
+
+.dodgerblue {
+  background-color: dodgerblue;
+}
+
+.lightblue {
+  background-color: lightblue;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.black {
+  background-color: black;
+}
+
+.modal-body,
+.tab-pane {
+  display: flex;
+  justify-content: space-around;
+}
+
+.table-settings {
+  display: block;
+}
+
+.color-square-background {
+  display: flex;
+}
+
+.background-square {
+  margin-right: 5px;
+}
+
+
+.imgStyle {
+  width: 130px;
+  height: 60px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.input-title {
+  margin-left: 200px;
+  font-weight: bold;
+}
+
+
+.input-login,
+.input-pass {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+.btn-secondary {
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+/* ERROR MESSAGE */
+
+.invalid input,
+.invalid select {
+  border-color: red;
+}
+
+.error-emptyInputs,
+.error-messageInputs,
+.error-invalidTable {
+  color: red;
+  display: none;
+}
+
+#signinAction {
+  margin-top: 20px;
+}
+
+div[data-bs-target="#signoutModal"] {
+  display: none;
+}
+
+#second-container {
+  display: none;
+}
+
+.style-table-containers {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 20px 0 20px;
+}
+
+.style-table-containers {
+  width: 100%;
+}
+
+.style-opsions-table {
+  display: flex;
+  margin-bottom: 53px;
+}
+
+#tableId {
+  display: block;
+}
+
+.left-section-style-table,
+.right-section-style-table {
+  width: 100%;
+}
+
+.tr,
+.td,
+.ws {
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+#style-table-border {
+  width: 80%;
+}
+
+#color-style-table-border {
+  width: 80%;
+}
+
+.type_border {
+  width: 80%;
+}
+
+.color_border {
+  width: 80%;
+}
+
+
+.ws {
+  margin-bottom: 50px;
+}
+
+
+#tableBtns {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+
+#resetTableBtn {
+  width: 95%;
+}
+
+#createTableBtn {
+  width: 100%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+.list_style_block,
+.ol-list-style-block {
+  width: 100%;
+}
+
+.input_li {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.type_marks_li {
+  width: 100%;
+  height: 35px;
+  padding: 5px;
+}
+
+.style-btn-for-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-reset-btn,
+.ol-reset-btn {
+  width: 230px;
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  border: none;
+}
+
+.list-create-btn,
+.ol-create-btn {
+  width: 230px;
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+  border: none;
+}
+
+input:invalid {
+  border: 1px solid red !important;
+}
+
+input:valid {
+  border: 1px solid gray;
+}
